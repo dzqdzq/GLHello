@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		601CE8402812F0D500913106 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 601CE83F2812F0D500913106 /* main.c */; };
+		601CE85E2812F8AE00913106 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE85C2812F8AE00913106 /* libglfw3.a */; };
+		601CE8612813136D00913106 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE8602813136D00913106 /* CoreFoundation.framework */; };
+		601CE863281313CA00913106 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE862281313CA00913106 /* CoreGraphics.framework */; };
+		601CE865281313E800913106 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE864281313E800913106 /* CoreVideo.framework */; };
+		601CE8672813140100913106 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE8662813140100913106 /* IOKit.framework */; };
+		601CE8692813141B00913106 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601CE8682813141B00913106 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,15 @@
 /* Begin PBXFileReference section */
 		601CE83C2812F0D500913106 /* GLhello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLhello; sourceTree = BUILT_PRODUCTS_DIR; };
 		601CE83F2812F0D500913106 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		601CE8542812F2F800913106 /* linmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
+		601CE85A2812F70100913106 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLhello/libglfw3.a; sourceTree = "<group>"; };
+		601CE85C2812F8AE00913106 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "GLhello/lib-x86_64/libglfw3.a"; sourceTree = "<group>"; };
+		601CE85D2812F8AE00913106 /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = "GLhello/lib-x86_64/libglfw.3.dylib"; sourceTree = "<group>"; };
+		601CE8602813136D00913106 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		601CE862281313CA00913106 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		601CE864281313E800913106 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		601CE8662813140100913106 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		601CE8682813141B00913106 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601CE8692813141B00913106 /* AppKit.framework in Frameworks */,
+				601CE8672813140100913106 /* IOKit.framework in Frameworks */,
+				601CE865281313E800913106 /* CoreVideo.framework in Frameworks */,
+				601CE863281313CA00913106 /* CoreGraphics.framework in Frameworks */,
+				601CE8612813136D00913106 /* CoreFoundation.framework in Frameworks */,
+				601CE85E2812F8AE00913106 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +64,7 @@
 			children = (
 				601CE83E2812F0D500913106 /* GLhello */,
 				601CE83D2812F0D500913106 /* Products */,
+				601CE8592812F70100913106 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +80,24 @@
 			isa = PBXGroup;
 			children = (
 				601CE83F2812F0D500913106 /* main.c */,
+				601CE8542812F2F800913106 /* linmath.h */,
 			);
 			path = GLhello;
+			sourceTree = "<group>";
+		};
+		601CE8592812F70100913106 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601CE8682813141B00913106 /* AppKit.framework */,
+				601CE8662813140100913106 /* IOKit.framework */,
+				601CE864281313E800913106 /* CoreVideo.framework */,
+				601CE862281313CA00913106 /* CoreGraphics.framework */,
+				601CE8602813136D00913106 /* CoreFoundation.framework */,
+				601CE85D2812F8AE00913106 /* libglfw.3.dylib */,
+				601CE85C2812F8AE00913106 /* libglfw3.a */,
+				601CE85A2812F70100913106 /* libglfw3.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +281,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FRA5A7JV9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLhello",
+					"$(PROJECT_DIR)/GLhello/lib-x86_64",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = GLHello/include;
 			};
 			name = Debug;
 		};
@@ -253,7 +297,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FRA5A7JV9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GLhello",
+					"$(PROJECT_DIR)/GLhello/lib-x86_64",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = GLHello/include;
 			};
 			name = Release;
 		};
