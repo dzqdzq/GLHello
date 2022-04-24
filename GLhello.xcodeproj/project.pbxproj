@@ -32,7 +32,6 @@
 		601CE83C2812F0D500913106 /* GLhello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLhello; sourceTree = BUILT_PRODUCTS_DIR; };
 		601CE83F2812F0D500913106 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		601CE8542812F2F800913106 /* linmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
-		601CE85A2812F70100913106 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = GLhello/libglfw3.a; sourceTree = "<group>"; };
 		601CE85C2812F8AE00913106 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "GLhello/lib-x86_64/libglfw3.a"; sourceTree = "<group>"; };
 		601CE85D2812F8AE00913106 /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = "GLhello/lib-x86_64/libglfw.3.dylib"; sourceTree = "<group>"; };
 		601CE8602813136D00913106 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -95,7 +94,6 @@
 				601CE8602813136D00913106 /* CoreFoundation.framework */,
 				601CE85D2812F8AE00913106 /* libglfw.3.dylib */,
 				601CE85C2812F8AE00913106 /* libglfw3.a */,
-				601CE85A2812F70100913106 /* libglfw3.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
